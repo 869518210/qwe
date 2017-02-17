@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button android:id="@+id/web_view_invoke_js"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="调JS方法"/>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <EditText android:id="@+id/web_view_text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"/>
+        <Button android:id="@+id/web_view_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浏览"/>
+    </LinearLayout>
+    <WebView android:id="@+id/web_view"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" />
+</LinearLayout>
